@@ -1,0 +1,26 @@
+
+
+/* Autores del programa:
+ * Alejandro Gonzalez Marne
+ * Jose María Villafañe Marcos
+ * Jose Manuel Morla Prieto
+ * Jesus Salinero Guzmán
+ *
+ * Arquitectura de Computadores - 20-21
+ * Distribuido mediante licencia GNU GPL license 3.0
+*/
+
+Programado en QT Designer v4.14 en Ubuntu 20.04
+
+Pasos a seguir (Windows):
+Ejecutar el comando: "qmake Assigment2.pro"
+Ejecutar el comando: "mingw32-make".
+Ejecutar el comando: "Assigment2.exe"
+==============================================
+Pasos a seguir (Linux):
+Abrir una Shell.
+Cuando se llegue al directorio de trabajo donde esta la practica
+En la shell escribimos la siguiente instrucción: qmake Assigment2.pro
+A continuacion, introducimos la sentencia make,
+y por ultimo, para ejecutar là practica escribimos la sentencia ./Assigment2
+
