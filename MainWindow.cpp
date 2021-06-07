@@ -41,10 +41,13 @@ void MainWindow::resetWindow(){
     ui->wingsCheckLine->setChecked(false);
     ui->reactorCheckLine->setChecked(false);
     ui->cvvLine->setText("");
+    ui->registrationLine->setText("");
     ui->engineCheckLine->setChecked(false);
     ui->fueltypeLine->setEnabled(false);
     ui->fuelCheckLine->setChecked(false);
     ui->undercarriageCheckLine->setChecked(false);
+    ui->nameLine->setText("");
+
 
 
 }
@@ -137,6 +140,9 @@ void MainWindow::on_pushButton_createVehicle_released()
     QString QNVehicles = QString::fromStdString(static_cast<std::ostringstream*>(&(std::ostringstream() << sizeList++))->str());
     ui->vehiculosCreados_lineEdit->setText(QNVehicles);
     fillComboBox();
+    QMessageBox mensaje;
+             mensaje.setText("Correct vehicle create");
+             mensaje.exec();
 
 }
     resetWindow();
