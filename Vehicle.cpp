@@ -190,12 +190,17 @@ void Vehicle::toString(){
         std::string NumWagons = static_cast<std::ostringstream*>(&(std::ostringstream() << numWagon))->str();
         std::string SNumWagons = "Wagons Number: " + NumWagons + "\r\n";
         std::string SNKit;
-        if(spareWheel){
-            SNKit = "Si";
-        }else{
-            SNKit = "No";
-        }
-        std::string SKit = "spareWheel: " + SNKit + "\r\n";
+        std::string SKit;
+               if(spareWheel){
+                   SNKit = "Si";
+                  // Linea aniadida: Asi hacemos explicito si tiene kit o rueda de repuesto
+                   SKit  = "spareWheel: " + SNKit + "\r\n";
+               }else{
+                   SNKit = "No";
+                   // Linea aniadida
+                   SKit  = "kit: Si\r\n";
+               }
+        //std::string SKit = "spareWheel: " + SNKit + "\r\n";
         std::string SType =  "Type: " + type + "\r\n";
         std::string SSRegistration = "Registration: " + registration + "\r\n";
 
